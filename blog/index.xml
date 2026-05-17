@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on RedForceSecurity</title><link>https://redforcesecurity.com/blog/</link><description>Recent content in Blog on RedForceSecurity</description><generator>Hugo -- gohugo.io</generator><language>es</language><copyright>© 2026</copyright><lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://redforcesecurity.com/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Por qué tu pyme necesita un pentesting (y no solo un antivirus)</title><link>https://redforcesecurity.com/blog/pentesting-para-pymes/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://redforcesecurity.com/blog/pentesting-para-pymes/</guid><description>&lt;h2 class="relative group"&gt;El antivirus no es suficiente
+ &lt;div id="el-antivirus-no-es-suficiente" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#el-antivirus-no-es-suficiente" aria-label="Ancla"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;La mayoría de las pequeñas y medianas empresas españolas siguen confiando en un antivirus como su principal (y muchas veces única) línea de defensa. En 2026, eso es como cerrar la puerta de casa con un candado de juguete.&lt;/p&gt;
+&lt;p&gt;Los ciberataques modernos no entran por donde esperas. Usan vulnerabilidades en tu servidor web, contraseñas débiles en el correo corporativo, empleados que hacen clic en enlaces de phishing, o configuraciones erróneas en tu firewall.&lt;/p&gt;</description></item><item><title>Qué es el pentesting y por qué tu empresa lo necesita</title><link>https://redforcesecurity.com/blog/que-es-pentesting/</link><pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate><guid>https://redforcesecurity.com/blog/que-es-pentesting/</guid><description>&lt;p&gt;Las pruebas de penetración —o pentesting— son una de las herramientas más eficaces para evaluar la seguridad real de una organización. A diferencia de un análisis de vulnerabilidades automatizado, el pentesting simula un ataque real ejecutado por profesionales que piensan y actúan como lo haría un atacante.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;¿En qué consiste?
+ &lt;div id="en-qué-consiste" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#en-qu%c3%a9-consiste" aria-label="Ancla"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;Un pentester autorizado intenta comprometer sistemas, redes o aplicaciones utilizando las mismas técnicas, herramientas y metodologías que usaría un ciberdelincuente. La diferencia fundamental es que se hace de forma controlada, documentada y con el objetivo de &lt;strong&gt;mejorar la seguridad&lt;/strong&gt;, no de causar daño.&lt;/p&gt;</description></item><item><title>Ingeniería social: el eslabón más débil de tu seguridad</title><link>https://redforcesecurity.com/blog/ingenieria-social/</link><pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate><guid>https://redforcesecurity.com/blog/ingenieria-social/</guid><description>&lt;p&gt;Más del 80% de las brechas de seguridad comienzan con un ataque de ingeniería social. No importa cuántos firewalls tengas ni lo robusta que sea tu infraestructura: si alguien convence a un empleado de hacer clic en un enlace malicioso o compartir credenciales, todo lo demás falla.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;¿Qué es la ingeniería social?
+ &lt;div id="qué-es-la-ingeniería-social" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#qu%c3%a9-es-la-ingenier%c3%ada-social" aria-label="Ancla"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;Es el conjunto de técnicas que manipulan a las personas para que realicen acciones o revelen información confidencial. Incluye phishing, vishing (por teléfono), smishing (por SMS), pretexting y muchas otras variantes.&lt;/p&gt;</description></item><item><title>OSCP: el camino hacia la certificación más exigente en hacking ético</title><link>https://redforcesecurity.com/blog/oscp-certificacion/</link><pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate><guid>https://redforcesecurity.com/blog/oscp-certificacion/</guid><description>&lt;p&gt;La &lt;strong&gt;OSCP (Offensive Security Certified Professional)&lt;/strong&gt; es considerada una de las certificaciones más exigentes y respetadas en el mundo de la ciberseguridad ofensiva. A diferencia de otros exámenes basados en preguntas tipo test, la OSCP es 100% práctica: tienes 24 horas para comprometer una serie de máquinas en un entorno controlado.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;¿Por qué importa?
+ &lt;div id="por-qué-importa" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#por-qu%c3%a9-importa" aria-label="Ancla"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;En un sector lleno de certificaciones teóricas, la OSCP demuestra algo que no tiene discusión: &lt;strong&gt;que sabes hackear&lt;/strong&gt;. No es memorizar respuestas, es demostrar habilidad real en un entorno que simula un escenario de pentesting profesional.&lt;/p&gt;</description></item></channel></rss>
