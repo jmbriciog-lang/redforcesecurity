@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
 
     grecaptcha.ready(function () {
-      grecaptcha.execute('SITE_KEY_PLACEHOLDER', { action: 'contact' }).then(function (token) {
+      grecaptcha.execute('6LfEPvIsAAAAANP00JUZjGynyxOwJhkIJ0EIxEqC', { action: 'contact' }).then(function (token) {
         document.getElementById('recaptcha-response').value = token;
         form.submit();
       });
