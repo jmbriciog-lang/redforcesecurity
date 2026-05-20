@@ -1,0 +1,24 @@
+[[main]]
+  name = "Inicio"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Servicios"
+  pageRef = "servicios"
+  weight = 20
+
+[[main]]
+  name = "Equipo"
+  pageRef = "quienes-somos"
+  weight = 30
+
+[[main]]
+  name = "Blog"
+  pageRef = "blog"
+  weight = 40
+
+[[main]]
+  name = "Contacto"
+  pageRef = "contacto"
+  weight = 50

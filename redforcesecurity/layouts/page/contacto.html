@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - RedForce Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --azul: #0f172a; --rojo: #ff0000; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; color: #1e293b; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .contacto-grid { display: grid; gap: 60px; grid-template-columns: 1.5fr 1fr; margin-top: 40px; }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; font-weight: 700; font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 8px; color: var(--azul); }
+        .form-control { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; font-family: 'Montserrat'; box-sizing: border-box; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 5px 0; }
+        .faq-question { background: none; border: none; width: 100%; text-align: left; font-family: 'Orbitron'; font-weight: 600; font-size: 0.9rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 15px 0; color: var(--azul); }
+        .faq-answer { display: none; padding: 0 0 20px 0; color: #475569; line-height: 1.6; font-size: 0.9rem; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-item.active .faq-question { color: var(--rojo); }
+        .contact-link { text-decoration: none; color: inherit; display: block; margin-bottom: 15px; transition: 0.3s; }
+        .contact-link:hover { color: var(--rojo); }
+        @media (max-width: 991px) { .contacto-grid { grid-template-columns: 1fr; } }
+    </style>
+<style>
+    /* Contenedores Flexibles */
+    .hero-container, .footer-grid, .flex-row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 20px;
+    }
+
+    /* Reglas para Móvil (Pantallas de menos de 768px) */
+    @media (max-width: 768px) {
+        .hero-container, .footer-grid, .flex-row {
+            flex-direction: column !important;
+            text-align: center !important;
+        }
+        
+        .hero-content, .hero-metrics, .footer-col {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* Evitamos que el logo se haga gigante o desaparezca */
+        nav img, footer img {
+            max-height: 40px !important;
+            margin: 0 auto !important;
+        }
+
+        /* Ajuste de fuentes para que no desborden */
+        h1 { font-size: 1.8rem !important; }
+        h2 { font-size: 1.5rem !important; }
+    }
+</style> </head>
+<body>
+    <section style="padding: 80px 0; background: white;">
+        <div class="container">
+            <p style="color: var(--rojo); font-weight: 700; font-family: 'Orbitron'; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 10px;">CONTACTO</p>
+            <h1 style="font-size: 2.8rem; margin-bottom: 20px; font-family: 'Orbitron'; color: var(--azul);">Hablemos de tu <span style="color: var(--rojo);">seguridad</span></h1>
+            <p style="font-size: 1.1rem; color: #475569; max-width: 700px; margin-bottom: 40px;">Cu�ntanos qu� te preocupa y te responderemos en menos de 24 horas.</p>
+
+            <div class="contacto-grid">
+                <!-- FORMULARIO (Sin l�nea roja superior) -->
+                <div style="background: #f8f9fa; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+                    <form action="#" method="POST">
+                        <div class="form-group"><label>Nombre y Apellidos</label><input type="text" class="form-control" placeholder="Ej: Jes�s Mar�a Bricio"></div>
+                        <div class="form-group"><label>Email corporativo</label><input type="email" class="form-control" placeholder="tucorreo@empresa.com"></div>
+                        <div class="form-group">
+                            <label>�Qu� servicio te interesa?</label>
+                            <select class="form-control">
+                                <option>Diagn�stico de Superficie (Gratuito)</option>
+                                <option>An�lisis de Vulnerabilidades</option>
+                                <option>Test de Intrusi�n (Pentesting)</option>
+                                <option>Simulaci�n de Phishing</option>
+                                <option>Consultor�a General</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Mensaje</label><textarea class="form-control" rows="4" placeholder="�En qu� podemos ayudarte?"></textarea></div>
+                        <!-- BOT�N ROJO -->
+                        <button type="submit" style="background: var(--rojo); color: white; border: none; padding: 18px 30px; font-family: 'Orbitron'; font-weight: 700; border-radius: 4px; width: 100%; cursor: pointer; transition: 0.3s;">ENVIAR SOLICITUD ?</button>
+                    </form>
+                </div>
+
+                <!-- DATOS Y FAQS -->
+                <div>
+                    <div style="margin-bottom: 40px;">
+                        <h3 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 25px;">Canales Directos</h3>
+                        <a href="mailto:info@redforcesecurity.com" class="contact-link">?? <strong>info@redforcesecurity.com</strong></a>
+                        <a href="https://wa.me/34600000000" class="contact-link" style="color: #25D366;">?? <strong>WhatsApp: Escr�benos ahora</strong></a>
+                        <p class="contact-link">?? Alicante � Murcia � Espa�a</p>
+                        <a href="https://instagram.com/redforcesecurity" class="contact-link">?? @redforcesecurity</a>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h3 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px;">Preguntas Frecuentes</h3>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question">�En qu� zona oper�is? <span>+</span></button>
+                            <div class="faq-answer">Aunque nuestra base est� en el Levante (Alicante y Murcia), realizamos auditor�as de ciberseguridad de forma remota en toda Espa�a.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">�Firm�is acuerdo de confidencialidad? <span>+</span></button>
+                            <div class="faq-answer">Siempre. Antes de analizar cualquier activo o recibir informaci�n sensible, firmamos un NDA (Non-Disclosure Agreement) para garantizar tu total tranquilidad legal.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">�Necesito conocimientos t�cnicos? <span>+</span></button>
+                            <div class="faq-answer">No. Nuestros informes incluyen un "Resumen Ejecutivo" dise�ado espec�ficamente para gerentes y due�os de negocio, explicando los riesgos en lenguaje claro y sin tecnicismos.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question">�Cu�nto tarda un proyecto? <span>+</span></button>
+                            <div class="faq-answer">Un diagn�stico inicial suele estar listo en 48-72h. Un Pentesting completo depende de la infraestructura, pero la media oscila entre 1 y 2 semanas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #0f172a; color: white; padding: 60px 0; border-top: 3px solid var(--rojo);">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <p style="font-family: 'Orbitron'; font-size: 0.9rem;">RED<span style="color:var(--rojo)">FORCE</span> SECURITY</p>
+            <p style="font-size: 0.8rem; color: #94a3b8;">&copy; 2026 RedForce Security � Alicante, Espa�a</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+                button.querySelector('span').textContent = item.classList.contains('active') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>

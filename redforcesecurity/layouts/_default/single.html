@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    <span class="tag">{{ with .Params.tag }}{{ . }}{{ else }}{{ .Section | title }}{{ end }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ if eq .Section "blog" }}<p style="font-size:.85rem;margin-top:8px;opacity:.5">{{ .Date.Format "2 de January de 2006" }} &middot; {{ .ReadingTime }} min lectura</p>{{ end }}
+  </div>
+</div>
+<section class="section" style="padding-top:56px">
+  <div class="container">
+    <div class="prose" style="margin:0 auto">
+      {{ .Content }}
+    </div>
+    {{ if eq .Section "blog" }}
+    <div style="max-width:760px;margin:56px auto 0;padding-top:32px;border-top:1px solid var(--gris-xl);text-align:center">
+      <a href="/blog/" class="btn btn-outline btn-sm">&larr; Volver al blog</a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

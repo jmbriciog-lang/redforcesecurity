@@ -1,0 +1,18 @@
+colorScheme = "fire"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+homepage.layout = "hero"
+homepage.homepageImage = "img/hero-bg.jpg"
+homepage.showRecent = false
+
+article.showDate = false
+article.showReadingTime = false
+article.showTableOfContents = false
+
+header.layout = "fixed"
+
+footer.showCopyright = true
+footer.showThemeAttribution = false
+
+sitemap.changefreq = "monthly"

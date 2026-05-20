@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    <span class="tag">{{ with .Params.tag }}{{ . }}{{ else }}{{ .Title }}{{ end }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</div>
+<section class="section" style="padding-top:56px">
+  <div class="container">
+    <div class="prose" style="margin:0 auto">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}

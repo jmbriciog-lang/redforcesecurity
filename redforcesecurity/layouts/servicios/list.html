@@ -1,0 +1,75 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    <span class="tag">Qu&eacute; hacemos</span>
+    <h1>Servicios de Seguridad Ofensiva</h1>
+    <p>Cuatro formas de descubrir tus vulnerabilidades antes de que alguien las use contra ti.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+      <!-- Diagnostico -->
+      <div class="card" style="padding:40px;border-top:3px solid var(--rojo)">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M8 11l2 2 4-4"/></svg></div>
+        <h3 style="font-size:1.2rem;margin-bottom:12px">Descubre lo que un atacante ya sabe de tu empresa</h3>
+        <p>Tu primer paso. Hacemos un escaneo real de lo que cualquier atacante puede ver de tu empresa desde Internet. Sin instalar nada, sin tocar tus sistemas, sin acceso interno. Solo con lo que es p&uacute;blico. Y te sorprender&aacute; lo que encontramos.</p>
+        <ul style="margin:16px 0 0 18px;color:var(--gris);font-size:.88rem">
+          <li>Escaneo de puertos y servicios expuestos</li>
+          <li>Revisi&oacute;n de configuraciones p&uacute;blicas (DNS, email, headers)</li>
+          <li>Detecci&oacute;n de tecnolog&iacute;as y versiones visibles</li>
+          <li>Mini-informe con hallazgos y siguientes pasos recomendados</li>
+        </ul>
+        <p style="margin-top:16px;font-size:.85rem;color:var(--rojo);font-weight:600">Sin compromiso. Sin letra peque&ntilde;a. En 48-72 horas laborables.</p>
+      </div>
+      <!-- Test vulnerabilidades -->
+      <div class="card" style="padding:40px;border-top:3px solid var(--rojo)">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 style="font-size:1.2rem;margin-bottom:12px">Todas tus puertas abiertas, documentadas y priorizadas</h3>
+        <p>Un escaneo autom&aacute;tico no es una auditor&iacute;a. Nosotros revisamos manualmente tu infraestructura, validamos cada hallazgo y te entregamos un informe donde cada vulnerabilidad tiene nombre, criticidad y soluci&oacute;n.</p>
+        <ul style="margin:16px 0 0 18px;color:var(--gris);font-size:.88rem">
+          <li>Auditor&iacute;a de infraestructura externa e interna</li>
+          <li>An&aacute;lisis de aplicaciones web y APIs</li>
+          <li>Pruebas sobre redes WiFi corporativas</li>
+          <li>Informe t&eacute;cnico con evidencias y plan de remediaci&oacute;n priorizado</li>
+        </ul>
+      </div>
+      <!-- Pentesting -->
+      <div class="card" style="padding:40px;border-top:3px solid var(--azul-e)">
+        <div class="card-icon" style="background:rgba(37,99,235,.1)"><svg viewBox="0 0 24 24" style="stroke:var(--azul-e)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3 style="font-size:1.2rem;margin-bottom:12px">Te demostramos hasta d&oacute;nde llega un atacante dentro de tu sistema</h3>
+        <p>Encontrar una vulnerabilidad es una cosa. Explotarla, escalar privilegios y demostrar que un atacante podr&iacute;a acceder a tu base de datos de clientes es otra. Eso es pentesting. Y eso es lo que hacemos.</p>
+        <ul style="margin:16px 0 0 18px;color:var(--gris);font-size:.88rem">
+          <li>Pentesting externo e interno</li>
+          <li>Explotaci&oacute;n de vulnerabilidades con post-explotaci&oacute;n</li>
+          <li>Escalada de privilegios y movimiento lateral</li>
+          <li>Informe ejecutivo + t&eacute;cnico con evidencias de explotaci&oacute;n y remediaci&oacute;n</li>
+        </ul>
+      </div>
+      <!-- Test phishing -->
+      <div class="card" style="padding:40px;border-top:3px solid var(--azul-e)">
+        <div class="card-icon" style="background:rgba(37,99,235,.1)"><svg viewBox="0 0 24 24" style="stroke:var(--azul-e)"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 style="font-size:1.2rem;margin-bottom:12px">Descubre cu&aacute;ntos de tu equipo caer&iacute;an en un ataque real</h3>
+        <p>Dise&ntilde;amos campa&ntilde;as de phishing realistas adaptadas a tu empresa. No es un test gen&eacute;rico: simulamos los mismos ataques que usar&iacute;a un adversario real contra tu sector. Y medimos todo.</p>
+        <ul style="margin:16px 0 0 18px;color:var(--gris);font-size:.88rem">
+          <li>Campa&ntilde;as de phishing personalizadas a tu empresa</li>
+          <li>Ataques de pretexting, vishing y smishing</li>
+          <li>M&eacute;tricas detalladas: apertura, clics, credenciales comprometidas</li>
+          <li>Informe con an&aacute;lisis conductual y plan de concienciaci&oacute;n</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CTA NDA -->
+    <div style="text-align:center;margin-top:72px;padding:56px;background:linear-gradient(135deg,var(--azul),var(--azul-mid));border-radius:var(--radius);position:relative;overflow:hidden">
+      <div style="position:absolute;inset:0;background-image:url('data:image/svg+xml,%3Csvg width=40 height=40 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M0 0h40v40H0z%27 fill=%27none%27 stroke=%27rgba(255,255,255,0.03)%27 stroke-width=%271%27/%3E%3C/svg%3E')"></div>
+      <div style="position:relative;z-index:1">
+        <h2 style="color:#fff;margin-bottom:12px;font-size:1.6rem">Todos nuestros proyectos bajo NDA</h2>
+        <p style="color:rgba(255,255,255,.55);max-width:520px;margin:0 auto 28px">Confidencialidad total desde el primer contacto. Firmamos acuerdo de confidencialidad antes de empezar. Tu informaci&oacute;n est&aacute; protegida por contrato.</p>
+        <a href="/contacto/" class="btn btn-red">Solicitar presupuesto sin compromiso</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,170 @@
+{{ define "main" }}
+<style>
+    .contacto-grid { display: grid; gap: 60px; grid-template-columns: 1.5fr 1fr; margin-top: 40px; }
+    .form-group { margin-bottom: 25px; }
+    .form-group label { display: block; font-weight: 700; font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 8px; color: var(--azul); }
+    .form-control { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 6px; font-family: 'Montserrat'; box-sizing: border-box; }
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+    .faq-question { background: none; border: none; width: 100%; text-align: left; font-family: 'Orbitron'; font-weight: 600; font-size: 0.95rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 10px 0; color: var(--azul); }
+    .faq-answer { display: none; padding: 10px 0 20px 0; color: #475569; line-height: 1.6; font-size: 0.95rem; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question { color: var(--rojo); }
+    @media (max-width: 991px) {
+        .contacto-grid { grid-template-columns: 1fr; }
+        .hero-title { font-size: 2rem !important; }
+        section[style*="padding: 100px"] { padding: 70px 0 50px 0 !important; }
+    }
+    @media (max-width: 768px) {
+        .hero-title { font-size: 1.6rem !important; }
+        footer .container > div:first-child { grid-template-columns: 1fr !important; }
+        section[style*="padding: 100px"] { padding: 60px 0 40px 0 !important; }
+        .contacto-grid > div:first-child { padding: 25px !important; }
+        .faq-question { font-size: 0.85rem !important; }
+    }
+    @media (max-width: 480px) {
+        .hero-title { font-size: 1.4rem !important; }
+        .contacto-grid > div:first-child { padding: 20px !important; }
+    }
+</style>
+
+<section style="padding: 100px 0 80px 0; background: white;">
+    <div class="container">
+        <p style="color: var(--rojo); font-weight: 700; font-family: 'Orbitron'; font-size: 0.9rem; letter-spacing: 2px; margin-bottom: 10px;">CONTACTO</p>
+        <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 20px; font-family: 'Orbitron';">Hablemos de tu <span style="color: var(--rojo);">seguridad</span></h1>
+        <p style="font-size: 1.1rem; color: #475569; max-width: 700px; margin-bottom: 40px;">Cu&eacute;ntanos qu&eacute; te preocupa y te responderemos en menos de 24 horas con una propuesta directa, sin rodeos t&eacute;cnicos innecesarios.</p>
+
+        <div class="contacto-grid">
+            <div style="background: #f8f9fa; padding: 40px; border-radius: 12px;">
+                <form action="https://formspree.io/f/meenyqng" method="POST">
+                    <div class="form-group">
+                        <label>Nombre y Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Nombre y apellidos" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" class="form-control" placeholder="Nombre de tu organizaci&oacute;n" name="empresa">
+                    </div>
+                    <div class="form-group">
+                        <label>Email corporativo</label>
+                        <input type="email" class="form-control" placeholder="tucorreo@empresa.com" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Tel&eacute;fono (opcional)</label>
+                        <input type="tel" class="form-control" placeholder="+34 600 000 000" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label>&iquest;Qu&eacute; servicio te interesa?</label>
+                        <select class="form-control" name="servicio">
+                            <option>Diagn&oacute;stico de Superficie (Gratuito)</option>
+                            <option>An&aacute;lisis Completo de Vulnerabilidades</option>
+                            <option>Test de Intrusi&oacute;n (Pentesting)</option>
+                            <option>Simulaci&oacute;n de Phishing</option>
+                            <option>No estoy seguro &mdash; quiero asesoramiento</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje / Detalles adicionales</label>
+                        <textarea class="form-control" rows="4" placeholder="Expl&iacute;canos brevemente tu situaci&oacute;n..." name="mensaje"></textarea>
+                    </div>
+                    <button type="submit" style="background: #e63946; color: white; border: none; padding: 15px 30px; font-family: 'Orbitron'; font-weight: 700; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1rem; transition: 0.3s;">ENVIAR SOLICITUD &rarr;</button>
+                </form>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px;">Datos de contacto</h3>
+                    <p style="margin-bottom: 10px;">&#128205; Alicante / Murcia &mdash; Toda Espa&ntilde;a</p>
+                    <p style="margin-bottom: 10px;">&#9993;&#65039; <a href="mailto:info@redforcesecurity.com" style="color: var(--rojo); font-weight: 700; text-decoration: none;">info@redforcesecurity.com</a></p>
+                    <p style="margin-bottom: 10px;">&#128172; <a href="https://wa.me/TUNUMERO" target="_blank" style="color: var(--rojo); font-weight: 700; text-decoration: none;">Escr&iacute;benos por WhatsApp</a></p>
+                    <p style="margin-bottom: 10px;">&#128247; <a href="https://instagram.com/redforcesecurity" target="_blank" style="color: var(--rojo); font-weight: 700; text-decoration: none;">@redforcesecurity</a></p>
+                </div>
+
+                <div style="background: #fff5f5; padding: 25px; border-radius: 8px; border: 1px solid #feb2b2;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                        <span style="font-size: 1.5rem;">&#128274;</span>
+                        <h4 style="font-family: 'Orbitron'; color: #c53030; margin: 0; font-size: 0.9rem;">CONFIDENCIALIDAD GARANTIZADA</h4>
+                    </div>
+                    <p style="font-size: 0.85rem; color: #742a2a; margin: 0;">Todos los datos que compartas est&aacute;n protegidos. Firmamos NDA antes de cualquier trabajo.</p>
+                </div>
+
+                <div style="margin-top: 50px;">
+                    <h3 style="font-family: 'Orbitron'; font-size: 1.2rem; margin-bottom: 20px;">Preguntas Frecuentes</h3>
+
+                    <div class="faq-item">
+                        <button class="faq-question">&iquest;Qu&eacute; es el diagn&oacute;stico gratuito? <span>+</span></button>
+                        <div class="faq-answer">Es un an&aacute;lisis externo de tu empresa desde la perspectiva de un atacante. Sin acceso a tus sistemas, solo con lo que es visible desde Internet. Recibes un informe con tus puntos de exposici&oacute;n reales. Sin compromiso, sin coste.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">&iquest;Es seguro contratar estos servicios? <span>+</span></button>
+                        <div class="faq-answer">Totalmente. Trabajamos con protocolos controlados y coordinamos contigo el alcance y los horarios antes de tocar nada. Si encontramos un riesgo cr&iacute;tico durante las pruebas, te avisamos inmediatamente. El objetivo es descubrir fallos, no causar da&ntilde;o.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">&iquest;Cu&aacute;nto cuesta y cu&aacute;nto tarda? <span>+</span></button>
+                        <div class="faq-answer">Depende del alcance, el n&uacute;mero de activos y la complejidad de tu infraestructura. Estudiamos tu caso y te damos un presupuesto personalizado con plazos realistas antes de empezar. Sin compromiso.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">&iquest;Firm&aacute;is acuerdo de confidencialidad? <span>+</span></button>
+                        <div class="faq-answer">Siempre. Firmamos un NDA antes de empezar cualquier proyecto. Tu informaci&oacute;n est&aacute; protegida desde el primer contacto.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">&iquest;Necesito conocimientos t&eacute;cnicos para entender el informe? <span>+</span></button>
+                        <div class="faq-answer">No. Nuestros informes incluyen un resumen ejecutivo claro para direcci&oacute;n con nivel de riesgo y recomendaciones priorizadas, adem&aacute;s del detalle t&eacute;cnico completo para tu equipo de IT.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background: #0f172a; color: white; padding: 60px 0 32px 0; font-size: 0.9rem;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 40% 30% 30%; gap: 40px; align-items: start;">
+            <div>
+                <img src="/img/logo.png" alt="RedForce Security" style="height: 35px; margin-bottom: 15px;">
+                <p style="color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Pensamos como atacantes para que uno real no tenga la oportunidad.</p>
+                <div style="display: flex; gap: 15px;">
+                    
+                    <a href="https://instagram.com/redforcesecurity" target="_blank" style="color: #94a3b8; transition: color 0.3s;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C16.67.014 16.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                </div>
+            </div>
+            <div>
+                <p style="color: #e63946; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">EXPLORAR</p>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="/servicios/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Servicios</a>
+                    <a href="/equipo/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Equipo</a>
+                    <a href="/contacto/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Contacto</a>
+                </div>
+            </div>
+            <div>
+                <p style="color: #e63946; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">CONTACTO</p>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="mailto:info@redforcesecurity.com" style="color: #e63946; text-decoration: none; font-size: 14px; font-weight: 600;">info@redforcesecurity.com</a>
+                    <span style="color: #94a3b8; font-size: 14px;">Espa&ntilde;a &middot; Servicio remoto</span>
+                    <a href="/contacto/" style="color: white; text-decoration: none; font-size: 14px;">Diagn&oacute;stico gratuito &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #1e293b; margin-top: 24px; padding-top: 24px; text-align: center;">
+            <span style="font-size: 13px; color: #64748b;">&copy; 2026 RedForce Security. Todos los derechos reservados.</span>
+        </div>
+    </div>
+</footer>
+<style>
+footer a:hover { color: #e63946 !important; text-decoration: underline; }
+footer a svg:hover { color: white !important; }
+@media (max-width: 768px) {
+    footer .container > div:first-child { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+        const span = button.querySelector('span');
+        span.textContent = item.classList.contains('active') ? '-' : '+';
+    });
+});
+</script>
+{{ end }}

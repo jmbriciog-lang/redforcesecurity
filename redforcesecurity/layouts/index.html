@@ -1,0 +1,170 @@
+﻿{{ define "main" }}
+<style>
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+.hero-buttons { display: flex; gap: 20px; flex-wrap: wrap; }
+.porque-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+@media (max-width: 991px) {
+    .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .hero-grid > div:first-child h1 { font-size: 2.5rem !important; }
+    .hero-grid > div:last-child { padding: 35px !important; }
+    .porque-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+@media (max-width: 768px) {
+    footer .container > div:first-child { grid-template-columns: 1fr !important; }
+    #particles { display: none; }
+    .hero-grid > div:first-child h1 { font-size: 2rem !important; }
+    .hero-grid > div:first-child p { font-size: 1.05rem !important; }
+    .hero-grid > div:last-child { padding: 30px !important; }
+    .hero-grid > div:last-child div[style*="font-size: 3rem"] { font-size: 2.2rem !important; }
+    .hero-buttons a { width: 100%; text-align: center; }
+    section[style*="padding: 120px"] { padding: 80px 0 60px 0 !important; }
+    section[style*="padding: 80px"] { padding: 50px 0 !important; }
+    .cita-bloque p { font-size: 0.95rem !important; }
+}
+@media (max-width: 480px) {
+    .hero-grid > div:first-child h1 { font-size: 1.7rem !important; }
+    section[style*="padding: 120px"] { padding: 60px 0 40px 0 !important; }
+}
+</style>
+
+<section style="padding: 120px 0; background: linear-gradient(135deg, #ffffff 0%, var(--fondo) 100%); position: relative; overflow: hidden;">
+    <canvas id="particles" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;"></canvas>
+    <div class="container hero-grid">
+        <div>
+            <h1 style="font-size: 4rem; line-height: 1; margin-bottom: 30px;">Toda empresa tiene <br><span style="color: var(--rojo);">puntos ciegos.</span></h1>
+            <p style="font-size: 1.3rem; color: #475569; margin-bottom: 40px; max-width: 600px;">El riesgo no espera. Nosotros tampoco. Simulamos ataques reales para que descubras tus vulnerabilidades antes de que lo haga alguien con peores intenciones.</p>
+            <div class="hero-buttons">
+                <a href="/contacto/" class="btn btn-red">Diagn&oacute;stico Gratuito</a>
+                <a href="/servicios/" class="btn btn-outline">Nuestros Servicios</a>
+            </div>
+        </div>
+        <div style="background: var(--azul); padding: 50px; border-radius: 16px; color: white; box-shadow: 0 25px 50px rgba(0,0,0,0.15);">
+            <h3 style="color: white; font-size: 1rem; margin-bottom: 30px; border-left: 4px solid var(--rojo); padding-left: 15px;">M&eacute;tricas de Impacto</h3>
+            <div style="margin-bottom: 40px;"><div style="font-size: 3rem; font-family: 'Orbitron'; color: var(--rojo);">60%</div><p style="font-size: 1rem; opacity: 0.8;">Pymes que cierran tras un ataque grave en menos de 6 meses.</p></div>
+            <div><div style="font-size: 3rem; font-family: 'Orbitron'; color: white;">72h</div><p style="font-size: 1rem; opacity: 0.8;">Plazo legal para notificar la brecha de datos (RGPD).</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="por-que" style="padding: 80px 0; background: white;">
+    <div class="container">
+        <div class="porque-grid">
+            <div>
+                <p style="color: var(--rojo); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">&iquest;Por qu&eacute; RedForce?</p>
+                <h2 style="font-size: 2.4rem; line-height: 1.2; margin-bottom: 20px; color: var(--azul);">Pensamos como atacantes. Trabajamos como aliados.</h2>
+                <p style="font-size: 1.05rem; color: #64748b; line-height: 1.7; margin-bottom: 30px;">No somos un esc&aacute;ner autom&aacute;tico. Somos pentesters reales que simulan ataques dirigidos contra tu infraestructura, tus aplicaciones y tu equipo humano.</p>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="display: flex; align-items: start; gap: 12px;">
+                        <svg style="min-width:22px;margin-top:2px;" width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#D90429" opacity="0.12"/><path d="M8 12l3 3 5-5" stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <div><span style="font-size: 1rem; font-weight: 600; color: var(--azul); display: block; margin-bottom: 4px;">Metodolog&iacute;a militar</span><p style="font-size: 0.9rem; color: #4a4a5a; margin: 0;">OWASP, PTES, OSSTMM &mdash; est&aacute;ndares internacionales aplicados con rigor.</p></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 12px;">
+                        <svg style="min-width:22px;margin-top:2px;" width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#D90429" opacity="0.12"/><path d="M8 12l3 3 5-5" stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <div><span style="font-size: 1rem; font-weight: 600; color: var(--azul); display: block; margin-bottom: 4px;">NDA desde el minuto cero</span><p style="font-size: 0.9rem; color: #4a4a5a; margin: 0;">Confidencialidad absoluta. Firmamos acuerdo de no divulgaci&oacute;n antes de empezar.</p></div>
+                    </div>
+                    <div style="display: flex; align-items: start; gap: 12px;">
+                        <svg style="min-width:22px;margin-top:2px;" width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#D90429" opacity="0.12"/><path d="M8 12l3 3 5-5" stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <div><span style="font-size: 1rem; font-weight: 600; color: var(--azul); display: block; margin-bottom: 4px;">Informes ejecutivos + t&eacute;cnicos</span><p style="font-size: 0.9rem; color: #4a4a5a; margin: 0;">Resultados que entiende el CEO y que puede ejecutar el equipo IT.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div style="background: var(--fondo); border-radius: 16px; padding: 40px;">
+                <p style="color: var(--rojo); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 24px;">NUESTRO ENFOQUE</p>
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div style="display: flex; gap: 16px; align-items: start;">
+                        <div style="min-width: 40px; height: 40px; background: var(--azul); border-radius: 10px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="#D90429" stroke-width="2" stroke-linecap="round"/></svg></div>
+                        <div><p style="font-weight: 700; color: var(--azul); margin-bottom: 4px;">Reconocimiento</p><p style="font-size: 0.9rem; color: #64748b;">Mapeamos tu superficie de ataque como lo har&iacute;a un adversario real.</p></div>
+                    </div>
+                    <div style="display: flex; gap: 16px; align-items: start;">
+                        <div style="min-width: 40px; height: 40px; background: var(--azul); border-radius: 10px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#D90429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                        <div><p style="font-weight: 700; color: var(--azul); margin-bottom: 4px;">Explotaci&oacute;n</p><p style="font-size: 0.9rem; color: #64748b;">Intentamos comprometer tus sistemas con t&eacute;cnicas reales, sin da&ntilde;o.</p></div>
+                    </div>
+                    <div style="display: flex; gap: 16px; align-items: start;">
+                        <div style="min-width: 40px; height: 40px; background: var(--azul); border-radius: 10px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="#D90429" stroke-width="2" stroke-linecap="round"/></svg></div>
+                        <div><p style="font-weight: 700; color: var(--azul); margin-bottom: 4px;">Informe</p><p style="font-size: 0.9rem; color: #64748b;">Entregamos evidencias claras con impacto de negocio y plan de acci&oacute;n.</p></div>
+                    </div>
+                    <div style="display: flex; gap: 16px; align-items: start;">
+                        <div style="min-width: 40px; height: 40px; background: var(--azul); border-radius: 10px; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 12c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="#D90429" stroke-width="2" stroke-linecap="round"/></svg></div>
+                        <div><p style="font-weight: 700; color: var(--azul); margin-bottom: 4px;">Fortificaci&oacute;n</p><p style="font-size: 0.9rem; color: #64748b;">Te ayudamos a cerrar cada brecha y verificamos que quede sellada.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background: white; color: var(--azul); padding: 30px 0 60px 0;">
+    <div class="container">
+        <div class="cita-bloque" style="max-width: 900px; text-align: left; border-left: 4px solid var(--rojo); padding-left: 35px;">
+            <p style="font-size: 1.1rem; font-family: 'Orbitron'; line-height: 1.6; font-weight: 600; margin-bottom: 25px; color: #0d0d2b;">Hemos encontrado vulnerabilidades cr&iacute;ticas en empresas que cre&iacute;an estar protegidas. La diferencia entre nosotros y un atacante real es que <span style="color: var(--rojo);">nosotros te lo contamos.</span></p>
+            <a href="/contacto/" class="btn" style="border: 2px solid var(--rojo); color: var(--rojo); background: transparent; padding: 12px 25px;">Solicita tu diagn&oacute;stico gratuito &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<footer style="background: #0f172a; color: white; padding: 60px 0 32px 0; font-size: 0.9rem;">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 40% 30% 30%; gap: 40px; align-items: start;">
+            <div>
+                <img src="/img/logo.png" alt="RedForce Security" style="height: 35px; margin-bottom: 15px;">
+                <p style="color: #94a3b8; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Pensamos como atacantes para que uno real no tenga la oportunidad.</p>
+                <div style="display: flex; gap: 15px;">
+                    
+                    <a href="https://instagram.com/redforcesecurity" target="_blank" style="color: #94a3b8; transition: color 0.3s;"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C16.67.014 16.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                </div>
+            </div>
+            <div>
+                <p style="color: #e63946; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">EXPLORAR</p>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="/servicios/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Servicios</a>
+                    <a href="/equipo/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Equipo</a>
+                    <a href="/contacto/" style="color: #cbd5e1; text-decoration: none; font-size: 14px;">Contacto</a>
+                </div>
+            </div>
+            <div>
+                <p style="color: #e63946; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">CONTACTO</p>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="mailto:info@redforcesecurity.com" style="color: #e63946; text-decoration: none; font-size: 14px; font-weight: 600;">info@redforcesecurity.com</a>
+                    <span style="color: #94a3b8; font-size: 14px;">Espa&ntilde;a &middot; Servicio remoto</span>
+                    <a href="/contacto/" style="color: white; text-decoration: none; font-size: 14px;">Diagn&oacute;stico gratuito &rarr;</a>
+                </div>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #1e293b; margin-top: 24px; padding-top: 24px; text-align: center;">
+            <span style="font-size: 13px; color: #64748b;">&copy; 2026 RedForce Security. Todos los derechos reservados.</span>
+        </div>
+    </div>
+</footer>
+
+<style>
+footer a:hover { color: #e63946 !important; text-decoration: underline; }
+footer a svg:hover { color: white !important; }
+</style>
+
+<script>
+(function(){
+    var c=document.getElementById('particles');
+    if(!c||window.innerWidth<769)return;
+    var ctx=c.getContext('2d');
+    function resize(){c.width=c.parentElement.offsetWidth;c.height=c.parentElement.offsetHeight;}
+    resize();window.addEventListener('resize',resize);
+    var pts=[];for(var i=0;i<60;i++){pts.push({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-0.5)*0.6,vy:(Math.random()-0.5)*0.6,r:Math.random()*1.5+0.5});}
+    function draw(){
+        ctx.clearRect(0,0,c.width,c.height);
+        for(var i=0;i<pts.length;i++){
+            var p=pts[i];p.x+=p.vx;p.y+=p.vy;
+            if(p.x<0||p.x>c.width)p.vx*=-1;
+            if(p.y<0||p.y>c.height)p.vy*=-1;
+            ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+            ctx.fillStyle='rgba(255,255,255,0.08)';ctx.fill();
+            for(var j=i+1;j<pts.length;j++){
+                var q=pts[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.sqrt(dx*dx+dy*dy);
+                if(d<120){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle='rgba(255,255,255,0.05)';ctx.lineWidth=0.5;ctx.stroke();}
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+    draw();
+})();
+</script>
+{{ end }}

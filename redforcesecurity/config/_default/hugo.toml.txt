@@ -1,0 +1,4 @@
+baseURL = 'https://redforcesecurity.com/'
+languageCode = 'es'
+title = 'RedForceSecurity'
+theme = 'blowfish'

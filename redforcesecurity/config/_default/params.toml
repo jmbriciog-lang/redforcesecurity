@@ -1,0 +1,16 @@
+colorScheme = "fire"
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
+homepage.layout = "background"
+homepage.showRecent = false
+
+article.showDate = false
+article.showReadingTime = false
+article.showTableOfContents = false
+article.showBreadcrumbs = false
+
+header.layout = "fixed"
+
+footer.showCopyright = true
+footer.showThemeAttribution = false

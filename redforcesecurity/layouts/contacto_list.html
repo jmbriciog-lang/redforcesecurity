@@ -1,0 +1,171 @@
+{{ define "main" }}
+<div class="page-hero" style="text-align:center">
+  <div class="container">
+    <span class="tag">Contacto</span>
+    <h1>Hablemos de tu seguridad</h1>
+    <p style="margin:0 auto">Cu&eacute;ntanos qu&eacute; te preocupa. Te respondemos en menos de 24 horas con una propuesta adaptada a tu caso. Sin presi&oacute;n, sin compromiso, sin letra peque&ntilde;a.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start">
+      <!-- Formulario -->
+      <div class="card" style="padding:44px">
+        <h2 style="font-size:1.3rem;margin-bottom:8px">Escr&iacute;benos</h2>
+        <p style="margin-bottom:28px;font-size:.92rem">Si no sabes por d&oacute;nde empezar, p&iacute;denos el diagn&oacute;stico gratuito y en 48-72 horas te mostramos lo que un atacante ve de tu empresa desde fuera.</p>
+        <div style="display:flex;flex-direction:column;gap:18px" id="rfForm">
+          <div>
+            <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">Nombre y apellidos *</label>
+            <input type="text" name="nombre" required style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;transition:var(--trans);outline:none" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'">
+          </div>
+          <div>
+            <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">Empresa *</label>
+            <input type="text" name="empresa" required style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;transition:var(--trans);outline:none" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'">
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+            <div>
+              <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">Email corporativo *</label>
+              <input type="email" name="email" required style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;transition:var(--trans);outline:none" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'">
+            </div>
+            <div>
+              <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">Tel&eacute;fono <span style="color:var(--gris-l)">(opcional)</span></label>
+              <input type="tel" name="telefono" style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;transition:var(--trans);outline:none" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'">
+            </div>
+          </div>
+          <div>
+            <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">&iquest;Qu&eacute; servicio te interesa? *</label>
+            <select name="servicio" required style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;background:var(--blanco);cursor:pointer;outline:none" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'">
+              <option value="">Selecciona una opci&oacute;n</option>
+              <option value="diagnostico">Diagn&oacute;stico gratuito</option>
+              <option value="vulnerabilidades">Test de vulnerabilidades</option>
+              <option value="pentesting">Pentesting</option>
+              <option value="phishing">Test de phishing</option>
+              <option value="noseguro">No estoy seguro</option>
+            </select>
+          </div>
+          <div>
+            <label style="font-size:.82rem;font-weight:600;color:var(--azul);display:block;margin-bottom:6px">Cu&eacute;ntanos brevemente tu situaci&oacute;n</label>
+            <textarea name="mensaje" rows="4" style="width:100%;padding:12px 16px;border:1px solid var(--gris-xl);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;resize:vertical;outline:none;transition:var(--trans)" onfocus="this.style.borderColor='var(--rojo)'" onblur="this.style.borderColor='var(--gris-xl)'"></textarea>
+          </div>
+          <button type="button" class="btn btn-red" style="width:100%;justify-content:center" onclick="alert('Formulario en configuraci&oacute;n. Env&iacute;a tu consulta a info@redforcesecurity.com')">Solicitar contacto</button>
+          <p style="font-size:.78rem;color:var(--gris-l);margin:0;text-align:center">Todos los datos que compartas est&aacute;n protegidos. Firmamos NDA antes de cualquier trabajo.</p>
+        </div>
+      </div>
+      <!-- Datos contacto -->
+      <div>
+        <div class="card" style="padding:36px;margin-bottom:24px">
+          <h3 style="font-size:1rem;margin-bottom:20px">Datos de contacto</h3>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <div style="display:flex;align-items:center;gap:14px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--rojo-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rojo)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><div style="font-size:.78rem;color:var(--gris-l);font-weight:600">Email</div><a href="mailto:info@redforcesecurity.com" style="font-size:.9rem;font-weight:600;color:var(--azul)">info@redforcesecurity.com</a></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--rojo-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rojo)" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+              <div><div style="font-size:.78rem;color:var(--gris-l);font-weight:600">WhatsApp</div><a href="https://wa.me/34XXXXXXXXX" style="font-size:.9rem;font-weight:600;color:var(--azul)">Escr&iacute;benos por WhatsApp</a></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--rojo-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rojo)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><div style="font-size:.78rem;color:var(--gris-l);font-weight:600">Ubicaci&oacute;n</div><span style="font-size:.9rem;font-weight:600;color:var(--azul)">Alicante / Murcia &mdash; Toda Espa&ntilde;a</span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px">
+              <div style="width:40px;height:40px;border-radius:10px;background:var(--rojo-glow);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rojo)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></div>
+              <div><div style="font-size:.78rem;color:var(--gris-l);font-weight:600">Instagram</div><a href="https://instagram.com/redforcesecurity" target="_blank" rel="noopener" style="font-size:.9rem;font-weight:600;color:var(--azul)">@redforcesecurity</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="padding:28px;background:linear-gradient(135deg,var(--azul),var(--azul-mid));border:none">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rojo)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span style="font-family:var(--font-title);font-size:.75rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:.1em">NDA GARANTIZADO</span>
+          </div>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.55);margin:0;line-height:1.7">Todos los proyectos bajo acuerdo de confidencialidad. Tu informaci&oacute;n est&aacute; protegida desde el primer contacto.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="max-width:800px;margin:72px auto 0">
+      <div class="section-head center">
+        <span class="tag">FAQ</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Qu&eacute; es el diagn&oacute;stico gratuito y qu&eacute; incluye?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">Es un escaneo inicial de tu superficie de ataque externa. Revisamos puertos abiertos, servicios expuestos, configuraciones p&uacute;blicas y tecnolog&iacute;as visibles. En 48-72 horas laborables recibes un mini-informe con lo que un atacante ve desde fuera. Sin instalar nada, sin acceso a tus sistemas, completamente gratis.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Es seguro hacer un pentesting? &iquest;Puede afectar a mi operativa?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">S&iacute;, es seguro. Trabajamos en entornos controlados y con protocolos establecidos para no afectar a tu operativa. Acordamos ventanas horarias, l&iacute;mites de alcance y criterios de parada antes de empezar. Todo bajo NDA y con comunicaci&oacute;n constante.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Cu&aacute;nto cuesta un pentesting / test de vulnerabilidades?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">Depende del alcance: n&uacute;mero de activos, complejidad de la infraestructura y tipo de pruebas. No tenemos paquetes cerrados porque cada empresa es diferente. Cu&eacute;ntanos tu caso y te damos presupuesto sin compromiso en 24-48 horas.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Firm&aacute;is acuerdo de confidencialidad?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">Siempre. Firmamos NDA antes de empezar cualquier proyecto, incluido el diagn&oacute;stico gratuito. Tu informaci&oacute;n est&aacute; protegida por contrato desde el primer contacto.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;En qu&eacute; zona oper&aacute;is?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">Estamos en Alicante y Murcia, pero trabajamos con empresas de toda Espa&ntilde;a. La mayor parte de nuestro trabajo se hace en remoto. Para proyectos que requieran presencia f&iacute;sica, nos desplazamos.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Necesito conocimientos t&eacute;cnicos para entender el informe?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">No. Nuestros informes tienen dos partes: un resumen ejecutivo para direcci&oacute;n (claro, sin tecnicismos) y un detalle t&eacute;cnico para el equipo de IT. Los dos son &uacute;tiles y cada uno entiende lo que necesita.</p>
+          </div>
+        </div>
+        <div class="faq-item" style="border-bottom:1px solid rgba(15,23,42,.08);padding:20px 0">
+          <button class="faq-q" onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--azul);text-align:left;padding:0;gap:16px">
+            <span>&iquest;Cu&aacute;nto tarda un proyecto?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gris)" stroke-width="2" style="flex-shrink:0;transition:transform .3s"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-a" style="max-height:0;overflow:hidden;transition:max-height .4s ease">
+            <p style="padding:12px 0 0;font-size:.9rem;line-height:1.7">El diagn&oacute;stico gratuito se entrega en 48-72 horas. Un test de vulnerabilidades o pentesting t&iacute;pico tarda entre 1 y 3 semanas dependiendo del alcance. Las campa&ntilde;as de phishing suelen durar 2-4 semanas. Te damos plazos concretos antes de empezar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.faq-item.open .faq-a{max-height:300px}
+.faq-item.open svg{transform:rotate(180deg)}
+@media(max-width:640px){
+  div[style*="grid-template-columns:1.2fr .8fr"]{grid-template-columns:1fr !important}
+  div[style*="grid-template-columns:1fr 1fr"][style*="gap:18px"]{grid-template-columns:1fr !important}
+}
+</style>
+{{ end }}
